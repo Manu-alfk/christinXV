@@ -537,8 +537,7 @@ body {
     left: 10%;
     right: 10%;
     text-align: center;
-    display: block;
-    background-color: rgba(139, 134, 37, 0.607);
+    display: block; 
     justify-content: center;
     align-items: center;
 }
@@ -556,8 +555,7 @@ body {
     padding: 10px 10px;
     text-align: center;
     /*font-size: 40px;*/
-    font-size: 8vw;
-    background-color: rgba(255, 158, 89, 0.524);
+    font-size: 8vw; 
 }
 
 .text_carta_1 {
@@ -578,13 +576,13 @@ body {
 }
 
 .text_carta_4 {
-    height: 35%; 
+    height: 30%; 
 }
 
 .text_carta_5 {
     height: 5%;   
     /*font-size: 28px;*/
-    font-size: 4vw;
+    font-size: 5vw;
 }
 
 .mostrar_mensaje {
