@@ -469,7 +469,7 @@ body {
     animation-timing-function: linear;
 }
 
-@keyframes ocultar_inicio_ani{
+@keyframes ocultar_inicio_ani {
     0% {
         opacity: 1;
     }
@@ -479,21 +479,21 @@ body {
     }
 }
 
-.ocultar_inicio{
+.ocultar_inicio {
     display: none;
 }
 
 
 
-.con_carta_{    
-        display: none;
+.con_carta_ {
+    display: none;
 }
 
-.mostar_con_carta{
+.mostar_con_carta {
     display: block;
 }
 
-.carta_ img{  
+.carta_ img {
     height: 95%;
     width: 90%;
     left: 5%;
@@ -501,21 +501,82 @@ body {
     /*display: none;  */
 }
 
-.mostrar_mensaje{
+@font-face {
+    font-family: carta_font;
+    src: url("WasteLowlife.ttf");
+}
+
+@font-face {
+    font-family: carta_font2;
+    src: url("Lonelyday.otf");
+}
+
+
+
+.text_carta_1,
+.text_carta_2,
+.text_carta_3,
+.text_carta_4,
+.text_carta_5{
+    position: fixed;
+    font-family: carta_font2;
+    color: rgb(0, 0, 0);
+    line-height: 0.85;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.text_carta_1 {
+    height: 75%;
+    width: 40%;
+    left: 27.5%; 
+    top: 13%;
+    font-size: 50px;
+}
+
+.text_carta_2 {
+    height: 75%;
+    width: 60%;
+    left: 18%; 
+    top: 25%;  
+}
+
+.text_carta_3 {
+    height: 75%;
+    width: 60%;
+    left: 18%;
+    font-size: 105px;
+    top: 40%;
+}
+
+.text_carta_4 {
+    height: 75%;
+    width: 60%;
+    left: 18%; 
+    top: 52%;
+}
+
+.text_carta_5 {
+    height: 75%;
+    width: 80%;
+    left: 8%;
+    top: 80%;
+    font-size: 28px;
+}
+
+.mostrar_mensaje {
     animation-duration: 10s;
-        animation-name: mostrar_mensaje_ani;
-        animation-delay: 0s;
-        animation-timing-function: linear;
-        display: block;
-        opacity: 1;
+    animation-name: mostrar_mensaje_ani;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    display: block;
+    opacity: 1;
 }
 
-@keyframes mostrar_carta_ani{
-0%{
+@keyframes mostrar_carta_ani {
+    0% {}
 
-}
-
-100%{
-
-}
+    100% {}
 }
