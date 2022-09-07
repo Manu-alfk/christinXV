@@ -308,9 +308,9 @@ body {
     top: -30%;
     background: none;
     border: 0px;
-    animation-duration: 15s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
-    animation-name: ani_sobre;
+    animation-name: rota_sobre;
     animation-delay: 1s;
     animation-timing-function: ease-out;
     cursor: pointer;
@@ -318,24 +318,34 @@ body {
 
 .rasgado{
     position: absolute;
-    left: -325.5%;
-    top: -30%;
-    /*transform: scale(0.123);*/
-    /*display:none;*/
-    
+    top: 5%; 
+    overflow: hidden;
+    width: 0%;
+}
 
+@keyframes rasgar_sobre{
+    0%{
+        width: 0px;
+    }
+
+    25%{
+        width: 0px;
+    }
+
+    100%{
+        width: 100%;
+    }
 }
 
 .stop_sobre{
-    animation-iteration-count: infinite;
-    animation-play-state: paused;
+    /*animation-iteration-count: infinite;*/
+    animation-play-state: paused; 
 }
 
-@keyframes ani_sobre {
+@keyframes rota_sobre {
     0% {
         left: 30%;
         top: -30%;
-        transform: rotate3d(0, 0, 0);
         transform: rotateX(0deg);
         transform: rotatey(20deg);
         transform: rotatez(0deg);
@@ -355,3 +365,32 @@ body {
         top: 110%;
     }
 }
+
+@keyframes mueve_sobre{
+    0% {
+            left: 30%;
+            top: -30%; 
+        } 
+                100% {
+            left: 35%;
+            top: 110%;
+        }
+}
+
+
+.papel_de_carta {
+    position: absolute;
+    height: 15%;
+    /*width: 50%;*/
+    left: calc(50% - 190px) ;
+    top: calc(50% - 265px); 
+
+    position: absolute;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-name: mueve_sobre;
+        animation-delay: 1s;
+        animation-timing-function: ease-out;
+    /*display: none;*/
+}
+
