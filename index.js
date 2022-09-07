@@ -8,39 +8,37 @@ var con_papel = document.querySelector(".con_papel");
 var con_sobre = document.querySelector(".con_sobre");
 var con_carta_ = document.querySelector(".con_carta_");
 
-var papel_sonido = document.getElementById("rasgado_audio"); 
-var lofi_sonido = document.getElementById("lofi_audio"); 
+var papel_sonido = document.getElementById("rasgado_audio");
+var lofi_sonido = document.getElementById("lofi_audio");
 
-lofi_sonido.play();
-
-bu_play.addEventListener("click", function () {  
-    inicio_oculto.classList.toggle("mostrar"); 
-    bu_play.classList.toggle("ocultar");  
-    inicio_oculto.style.animation = "mostrar_inicio 1s";
-    console.log("se inicio");
-
-})
+bu_play.addEventListener("click", function () {
+    lofi_sonido.play();
+    bu_play.classList.toggle("ocultar");
+        inicio_oculto.classList.toggle("mostrar");
+        inicio_oculto.style.animation = "mostrar_inicio 3s";
+        console.log("se inicio");
+    
+});
 
 sobre.addEventListener("click", function () {
     papel_sonido.play();
     console.log("sobre");
-    sobre.classList.toggle ("stop_sobre");
-    con_papel.classList.toggle ("stop_papel");
-    rasgado.style.animation = "rasgar_sobre 2s"; 
+    sobre.classList.toggle("stop_sobre");
+    con_papel.classList.toggle("stop_papel");
+    rasgado.style.animation = "rasgar_sobre 2s";
 
-    con_sobre.className =  "con_sobre_";
+    con_sobre.className = "con_sobre_";
     papel_carta.className = "ve_carta";
-    
+
     setTimeout(function () {
-        inicio_oculto.className = "fade_inicio"; 
+        inicio_oculto.className = "fade_inicio";
     }, 5000);
-    
+
     setTimeout(function () {
-        con_carta_.className = "mostar_con_carta"; 
+        con_carta_.className = "mostar_con_carta";
     }, 6000);
 
     setTimeout(function () {
-        inicio_oculto.className = "ocultar_inicio"; 
+        inicio_oculto.className = "ocultar_inicio";
     }, 7000);
-})
-
+});
