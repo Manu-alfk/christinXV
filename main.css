@@ -25,7 +25,7 @@ body {
 }
 
 .inicio_oculto {
-    display: none;  
+    display: none;
     transition: 1s;
 
 }
@@ -35,8 +35,8 @@ body {
 }
 
 .mostrar {
-    display: block;  
-} 
+    display: block;
+}
 
 @keyframes mostrar_inicio {
     from {
@@ -60,7 +60,7 @@ body {
     position: absolute;
     left: 0%;
     top: 0%;
-    animation-duration: 5s; 
+    animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
@@ -316,30 +316,29 @@ body {
     cursor: pointer;
 }
 
-.rasgado{
+.rasgado {
     position: absolute;
-    top: 5%; 
+    top: 5%;
     overflow: hidden;
     width: 0%;
 }
 
-@keyframes rasgar_sobre{
-    0%{
+@keyframes rasgar_sobre {
+    0% {
         width: 0px;
     }
 
-    25%{
+    25% {
         width: 0px;
     }
 
-    100%{
+    100% {
         width: 100%;
     }
 }
 
-.stop_sobre{
-    /*animation-iteration-count: infinite;*/
-    animation-play-state: paused; 
+.stop_sobre {
+    animation-play-state: paused;
 }
 
 @keyframes rota_sobre {
@@ -366,31 +365,157 @@ body {
     }
 }
 
-@keyframes mueve_sobre{
+@keyframes mueve_sobre {
     0% {
-            left: 30%;
-            top: -30%; 
-        } 
-                100% {
-            left: 35%;
-            top: 110%;
-        }
+        left: 40%;
+        top: -25%;
+    }
+
+    100% {
+        left: 40%;
+        top: 110%;
+    }
 }
 
+.con_sobre_ {
+    animation-duration: 6s;
+    animation-name: con_sobre_ani;
+    animation-delay: 5s;
+}
+
+@keyframes con_sobre_ani {
+    0% {
+        opacity: 1;
+    }
+
+    10% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.con_papel {
+    position: absolute;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-name: mueve_sobre;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    width: 10%;
+    height: 10%;
+    top: -20%;
+}
+
+.stop_papel {
+    animation-play-state: paused;
+}
+
+.papel_carta {
+    position: absolute;
+    overflow: hidden;
+    width: 0%;
+    height: 0%;
+}
 
 .papel_de_carta {
     position: absolute;
-    height: 15%;
-    /*width: 50%;*/
-    left: calc(50% - 190px) ;
-    top: calc(50% - 265px); 
-
-    position: absolute;
-        animation-duration: 5s;
-        animation-iteration-count: infinite;
-        animation-name: mueve_sobre;
-        animation-delay: 1s;
-        animation-timing-function: ease-out;
-    /*display: none;*/
+    width: 100%;
 }
 
+.ve_carta {
+    position: absolute;
+    animation-duration: 4s;
+    animation-name: muestra_carta;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes muestra_carta {
+    0% {
+        height: 0%;
+        left: 45%;
+        width: 0%;
+        top: 0%;
+    }
+
+    25% {
+        top: -200%;
+        left: -100%;
+        height: 50%;
+        width: 100%;
+    }
+
+    75% {
+        top: -300%;
+        height: 400%;
+        width: 400%;
+    }
+
+    100% {
+        top: -400%;
+        left: -300%;
+        height: 800%;
+        width: 800%;
+    }
+}
+
+.fade_inicio {
+    animation-duration: 2s;
+    animation-name: ocultar_inicio_ani;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+}
+
+@keyframes ocultar_inicio_ani{
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.ocultar_inicio{
+    display: none;
+}
+
+
+
+.con_carta_{    
+        display: none;
+}
+
+.mostar_con_carta{
+    display: block;
+}
+
+.carta_ img{  
+    height: 95%;
+    width: 90%;
+    left: 5%;
+    top: 3%;
+    /*display: none;  */
+}
+
+.mostrar_mensaje{
+    animation-duration: 10s;
+        animation-name: mostrar_mensaje_ani;
+        animation-delay: 0s;
+        animation-timing-function: linear;
+        display: block;
+        opacity: 1;
+}
+
+@keyframes mostrar_carta_ani{
+0%{
+
+}
+
+100%{
+
+}
+}
