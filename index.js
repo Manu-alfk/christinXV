@@ -9,7 +9,9 @@ var con_sobre = document.querySelector(".con_sobre");
 var con_carta_ = document.querySelector(".con_carta_");
 
 var papel_sonido = document.getElementById("rasgado_audio"); 
+var lofi_sonido = document.getElementById("lofi_audio"); 
 
+lofi_sonido.play();
 
 bu_play.addEventListener("click", function () {  
     inicio_oculto.classList.toggle("mostrar"); 
