@@ -6,6 +6,7 @@ body {
 }
 
 .bu_play {
+    display: none;
     background: none;
     font-size: 160px;
     position: absolute;
